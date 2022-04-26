@@ -16,11 +16,10 @@ NOTE: This simple example ignores https://docs.sonarcloud.io/advanced-setup/lang
 It is very easy to analyze a C, C++ and Objective-C project with SonarCloud https://docs.travis-ci.com/user/sonarcloud/[on Travis CI]:
 
 . Create a `sonar-project.properties` file to store your configuration
-. Store the value of your token as SONAR_TOKEN environment variable in your Repository Settings
 . In your `.travis.yml` file:
 .. Activate the https://docs.travis-ci.com/user/sonarcloud/[Travis Add-on] and add it to your `.travis.yml` file:
 * Specify your GitHub `organization`
-* add your encrypted `SONAR_TOKEN`
+* Add your encrypted Sonar token
 .. Wrap your compilation with the https://docs.sonarcloud.io/advanced-setup/languages/c-c-objective-c/#analysis-steps-using-build-wrapper[Build Wrapper]
 .. Run `sonar-scanner` later on
 
