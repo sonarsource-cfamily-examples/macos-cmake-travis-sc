@@ -1,8 +1,6 @@
 language: cpp
 os: osx
 
-sudo: false
-
 addons:
   sonarcloud:
     organization: "sonarsource-cfamily-examples"
